@@ -1,0 +1,190 @@
+.footer-container {
+  width: 100%;
+  @media screen and (min-width: 480px) {
+    max-width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-around;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+    display: flex;
+    align-items: baseline;
+  }
+}
+.footer {
+  background-color: var(--section-color-dark);
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
+}
+.footer-logo {
+  display: inline-block;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  line-height: 1.2;
+  color: var(--main-color);
+  margin-right: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+
+  &__part {
+    color: var(--accent-color);
+  }
+}
+.footer-adress:nth-child(2) {
+  font-size: 14px;
+  line-height: 1.7;
+  font-style: normal;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+}
+.footer-adress__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+.footer-adress__link {
+  padding-top: 0;
+  padding-bottom: 0;
+  text-decoration: none;
+  color: var(--footer-link-color);
+  transition: color 250ms var(--timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+.footer-social {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    // margin-left: 165px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+.footer-social__label {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+  margin-bottom: 20px;
+}
+.footer-social__list {
+  display: flex;
+  justify-content: center;
+}
+.footer-social__icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+.footer-social__link {
+  display: flex;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+  color: var(--main-color);
+  transition: background-color 250ms var(--timing-function),
+    color 250ms var(--timing-function);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
+.footer-form {
+  display: block;
+  @media screen and (min-width: 768px) {
+    margin-top: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 103px;
+  }
+}
+.footer-form__label {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+  margin-bottom: 20px;
+}
+.footer-form__input {
+  width: 100%;
+  padding-left: 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: var(--section-color-dark);
+  color: rgba(255, 255, 255, 0.6);
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: block;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    margin-bottom: 0;
+  }
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+.footer-form__btn {
+  position: relative;
+  border: none;
+  padding: 10px 62px 10px 29px;
+  margin-left: 12px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--main-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    margin-left: 10px;
+    width: 24px;
+    height: 24px;
+    background-image: url(../images/icon_send.svg);
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
