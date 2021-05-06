@@ -106,7 +106,12 @@
   color: var(--font-color-dark);
   letter-spacing: 0.02em;
   transition: color 250ms var(--timing-function);
-
+  &--top {
+    padding-top: 21px;
+  }
+  &--bottom {
+    padding-bottom: 21px;
+  }
   &:hover,
   &:focus {
     color: var(--accent-color);
