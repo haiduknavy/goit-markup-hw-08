@@ -25,6 +25,11 @@
     text-align: left;
   }
 }
+@media screen and (max-width: 767.98px) {
+  .footer-adress-container {
+    margin-bottom: 60px;
+  }
+}
 .footer-logo {
   display: inline-block;
   text-decoration: none;
@@ -64,10 +69,8 @@
   }
 }
 .footer-social {
-  margin-top: 60px;
   margin-bottom: 60px;
   @media screen and (min-width: 768px) {
-    // margin-left: 165px;
     margin-top: 0;
     margin-bottom: 0;
   }

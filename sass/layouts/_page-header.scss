@@ -62,7 +62,9 @@
   &:focus {
     color: var(--accent-color);
   }
-
+  &--current {
+    color: var(--accent-color);
+  }
   &--current::after {
     content: "";
     position: absolute;
