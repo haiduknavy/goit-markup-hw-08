@@ -170,7 +170,6 @@
   position: relative;
   border: none;
   padding: 10px 62px 10px 29px;
-  margin-left: 12px;
   cursor: pointer;
   font-weight: bold;
   font-size: 16px;
@@ -180,7 +179,9 @@
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
+  }
   &::after {
     content: "";
     position: absolute;

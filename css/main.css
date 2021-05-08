@@ -202,7 +202,6 @@ body {
   }
 }
 
-.portfolio-grid__item:focus .portfolio-grid-overlay__text,
 .portfolio-grid__item:hover .portfolio-grid-overlay__text {
   opacity: 1;
   transform: translateY(0);
@@ -219,6 +218,11 @@ body {
   cursor: pointer;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   transition: box-shadow 250ms var(--timing-function);
+}
+
+.portfolio-grid__link:focus .portfolio-grid-overlay__text {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .portfolio-grid-overlay {
@@ -468,7 +472,7 @@ body {
     position: fixed;
     display: flex;
     justify-content: flex-end;
-    right: 23px;
+    right: 10%;
     top: 22px;
     z-index: 556;
     width: 40px;
@@ -567,6 +571,12 @@ body {
 .mobile-menu-contact__link:hover, .mobile-menu-contact__link:focus {
   color: var(--accent-color);
   font-size: 34px;
+}
+
+@media screen and (max-width: 480px) {
+  .mobile-menu-contact__link:hover, .mobile-menu-contact__link:focus {
+    font-size: 28px;
+  }
 }
 
 .icon-close {
@@ -1002,8 +1012,7 @@ body {
   left: 50%;
   opacity: 1;
   width: 450px;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding: 40px;
   transform: translate(-50%, -50%) scale(1);
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1051,7 +1060,6 @@ body {
 
 .modal__lable {
   font-weight: bold;
-  margin-top: 40px;
   margin-bottom: 12px;
   font-size: 20px;
   line-height: 1.5;
@@ -1190,6 +1198,12 @@ body {
   margin-bottom: 30px;
 }
 
+@media screen and (max-width: 350px) {
+  .form-field__checkbox-lable {
+    font-size: 10px;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .form-field__checkbox-lable {
     flex-wrap: wrap;
@@ -1237,7 +1251,6 @@ body {
   padding: 10px 55px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 40px;
   cursor: pointer;
   border: none;
   background-color: #188ce8;
@@ -1467,7 +1480,6 @@ body {
   position: relative;
   border: none;
   padding: 10px 62px 10px 29px;
-  margin-left: 12px;
   cursor: pointer;
   font-weight: bold;
   font-size: 16px;
@@ -1477,6 +1489,12 @@ body {
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-form__btn {
+    margin-left: 12px;
+  }
 }
 
 .footer-form__btn::after {

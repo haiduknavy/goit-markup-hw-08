@@ -72,7 +72,6 @@
   @media screen and (min-width: 1200px) {
     flex-basis: calc((100% - 30px * 3) / 3);
   }
-  &:focus .portfolio-grid-overlay__text,
   &:hover .portfolio-grid-overlay__text {
     opacity: 1;
     transform: translateY(0);
@@ -90,6 +89,10 @@
       1px 4px 6px rgba(0, 0, 0, 0.16);
     transition: box-shadow 250ms var(--timing-function);
   }
+}
+.portfolio-grid__link:focus .portfolio-grid-overlay__text {
+  opacity: 1;
+  transform: translateY(0);
 }
 .portfolio-grid-overlay {
   position: relative;

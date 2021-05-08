@@ -19,8 +19,7 @@
   left: 50%;
   opacity: 1;
   width: 450px;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding: 40px;
   transform: translate(-50%, -50%) scale(1);
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -62,7 +61,6 @@
 }
 .modal__lable {
   font-weight: bold;
-  margin-top: 40px;
   margin-bottom: 12px;
   font-size: 20px;
   line-height: 1.5;
@@ -181,6 +179,9 @@
   letter-spacing: 0.03em;
   color: var(--font-color-dark);
   margin-bottom: 30px;
+  @media screen and (max-width: 350px) {
+    font-size: 10px;
+  }
   @media screen and (max-width: 480px) {
     flex-wrap: wrap;
   }
@@ -217,7 +218,6 @@
   padding: 10px 55px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 40px;
   cursor: pointer;
   border: none;
   background-color: #188ce8;
